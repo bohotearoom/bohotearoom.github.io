@@ -1,0 +1,11 @@
+.inline-list {
+	li {
+		list-style-type:none;
+		display: inline-block;
+		float:left;
+	}
+}
+.cf {
+	content: "";
+	display: table;
+}
