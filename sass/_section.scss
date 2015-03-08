@@ -1,0 +1,25 @@
+.hero {
+		img {
+			max-width: 100%;
+			height:auto;
+		}
+	}
+
+section {
+	padding: $spaceM;
+	@media (min-width: 992px){
+			width: 90%;
+			margin:0 auto;
+	}
+	p {
+		color: $brown;
+		font-weight: 300;
+		line-height: 1.8em;
+		margin-bottom: 1em;
+		@media (min-width: 992px){
+			width: 90%;
+			margin:0 auto 1em;;
+			font-size: 1.3em;
+		}
+	}
+}
