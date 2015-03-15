@@ -208,6 +208,15 @@ section {
       section p {
         margin: 0 auto 1em;
         font-size: 1.3em; } }
+  .footer section svg {
+    vertical-align: middle;
+    margin-right: 0.5em; }
+  .footer section a {
+    display: block;
+    color: #000;
+    vertical-align: middle;
+    text-decoration: none;
+    text-align: center; }
 
 .tg {
   border-collapse: collapse;
