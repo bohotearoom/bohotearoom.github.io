@@ -176,6 +176,7 @@ body {
         float: right;
         margin-top: 25px; }
         .header .navigation li {
+          width: auto;
           width: initial;
           border-top: 1px solid #fff; }
           .header .navigation li a {
