@@ -171,6 +171,7 @@ body {
         max-height: 100%;
         background: none;
         vertical-align: top;
+        width: auto;
         width: initial;
         float: right;
         margin-top: 25px; }
