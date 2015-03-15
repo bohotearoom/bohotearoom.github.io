@@ -1,4 +1,6 @@
 .hero {
+		max-height: 435px;
+		overflow: hidden;
 		img {
 			max-width: 100%;
 			height:auto;
@@ -17,9 +19,18 @@ section {
 		line-height: 1.8em;
 		margin-bottom: 1em;
 		@media (min-width: 992px){
-			width: 90%;
 			margin:0 auto 1em;;
 			font-size: 1.3em;
 		}
+	}
+}
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{padding:10px 5px;border-style:solid;border-width:0;overflow:hidden;word-break:normal;}
+.tg th{font-weight:normal;padding:10px 5px;border-style:solid;border-width:0;overflow:hidden;word-break:normal;}
+.item__price {font-weight: 800; text-align: right;}
+.item__heading{font-weight: 800;}
+.item__name {
+	span {
+		font-size:85%;
 	}
 }

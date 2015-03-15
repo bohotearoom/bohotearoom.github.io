@@ -6,12 +6,9 @@ $(document).ready(function() {
 	$('.close-menu a').on("click", function(){
 		$(this).parent().parent().toggleClass('active');
 	});
-	if ($('section').hasClass('contact')){
+	if ($('body').hasClass('contact__page')){
 		initialize();
-	}
-});
-
-function initialize() {
+		function initialize() {
 var myLatlng = new google.maps.LatLng(51.368383,-0.446294);
 var mapOptions = {
   center: myLatlng,
@@ -26,4 +23,7 @@ var marker = new google.maps.Marker({
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
+	}
+});
+
 
