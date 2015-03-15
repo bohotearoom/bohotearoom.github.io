@@ -23,6 +23,19 @@ section {
 			font-size: 1.3em;
 		}
 	}
+	.footer & {
+		svg {
+			vertical-align: middle;
+			margin-right: .5em;
+		}
+		a {
+			display: block;
+			color:#000;
+			vertical-align: middle;
+			text-decoration: none;
+			text-align: center;
+		}
+	}
 }
 .tg  {border-collapse:collapse;border-spacing:0;}
 .tg td{padding:10px 5px;border-style:solid;border-width:0;overflow:hidden;word-break:normal;}
