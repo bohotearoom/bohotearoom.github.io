@@ -1,0 +1,42 @@
+.tiles {
+	display: block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: -1em;
+    margin-top: -1em;
+    clear: both;
+    overflow: hidden;
+}
+.tiles__item {
+   	padding-left: 1em;
+    padding-top: 1em;
+    width: 100%;
+    float: left;
+    img {
+    	max-width: 100%;
+    	display: block;
+    	height: auto;
+    }
+    &.images-combined {
+    	img:first-child {
+    		margin-bottom: 1em;
+    	}
+    }
+    @media (min-width: 569px){
+	    &--half {
+	    	width:50%;
+	    }
+	    &--third {
+	    	width: 33.3333%;
+	    }
+	    &--twothirds {
+	    	width:66.6667%;
+	    }
+	    &.images-combined {
+    	img:first-child {
+    		margin-bottom: 0.55em;
+    	}
+    }
+	}
+}

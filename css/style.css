@@ -188,12 +188,16 @@ body {
           .header .navigation li.active {
             border-top: 1px solid #7d453a; } }
 
-.hero {
+.hero--img {
   max-height: 435px;
   overflow: hidden; }
-  .hero img {
+  .hero--img img {
     max-width: 100%;
     height: auto; }
+
+.hero--map {
+  max-height: 435px;
+  overflow: hidden; }
 
 section {
   padding: 15px; }
@@ -212,7 +216,7 @@ section {
         font-size: 1.3em; } }
   .footer section svg {
     vertical-align: middle;
-    margin-right: 0.5em; }
+    margin-right: .5em; }
   .footer section a {
     display: block;
     color: #000;
@@ -245,6 +249,8 @@ section {
 
 .item__heading {
   font-weight: 800; }
+  .item__heading span {
+    font-size: 85%; }
 
 .item__name span {
   font-size: 85%; }
@@ -277,6 +283,7 @@ section .form {
       width: 60%;
       display: inline-block;
       vertical-align: top; } }
+
 section .details {
   padding: 15px 0;
   line-height: 1.8em; }
@@ -300,6 +307,37 @@ section .details {
         border: 1px solid #fff; } }
     .contact .primary-btn:hover {
       background: #794238; }
+
+.tiles {
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: -1em;
+  margin-top: -1em;
+  clear: both;
+  overflow: hidden; }
+
+.tiles__item {
+  padding-left: 1em;
+  padding-top: 1em;
+  width: 100%;
+  float: left; }
+  .tiles__item img {
+    max-width: 100%;
+    display: block;
+    height: auto; }
+  .tiles__item.images-combined img:first-child {
+    margin-bottom: 1em; }
+  @media (min-width: 569px) {
+    .tiles__item--half {
+      width: 50%; }
+    .tiles__item--third {
+      width: 33.3333%; }
+    .tiles__item--twothirds {
+      width: 66.6667%; }
+    .tiles__item.images-combined img:first-child {
+      margin-bottom: 0.55em; } }
 
 /* Slider */
 .slick-slider {
@@ -329,7 +367,8 @@ section .details {
     cursor: pointer;
     cursor: hand; }
 
-.slick-slider .slick-track, .slick-slider .slick-list {
+.slick-slider .slick-track,
+.slick-slider .slick-list {
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
   -ms-transform: translate3d(0, 0, 0);
@@ -341,7 +380,8 @@ section .details {
   left: 0;
   top: 0;
   display: block; }
-  .slick-track:before, .slick-track:after {
+  .slick-track:before,
+  .slick-track:after {
     content: "";
     display: table; }
   .slick-track:after {

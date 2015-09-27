@@ -70,12 +70,11 @@
             </header>
         </div>
         <div class="full-width contact">
-            <div id="map" class="hero">
-                    <!-- <img src="assets/boho-coffee.jpg" alt="boho food"> -->
+            <div id="map" class="hero hero--map">
             </div>
             <section id="contact">
                 <div class="form">
-                   <form action="#" method="post">
+                   <form action="http://formspree.io/bohoweybridge@yahoo.co.uk" method="post">
                       <fieldset>
                         <label for="name">Name:</label>
                         <input type="text" id="name" placeholder="Enter your full name" />
@@ -120,8 +119,22 @@ BOHO is pleased to offers its services for Kids Parties, Birthdays, Weddings and
         </section>
             
         </div>
+        <script>
+            function initMap() {
+                var myLatLng = {lat: 51.368383, lng: -0.446294};
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 17,
+                    center: myLatLng
+                });
+                var marker = new google.maps.Marker({
+                    position: myLatLng,
+                    map: map,
+                    title: 'Boho Tea room & coffee shop'
+                });
+            }
+        </script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmA-gkLQ8OfXZ6456twF0avQ_He7pfLOI&sensor=false&callback=initMap"></script>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
         <script src="main.js"></script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>

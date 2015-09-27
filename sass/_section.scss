@@ -1,4 +1,5 @@
 .hero {
+	&--img {
 		max-height: 435px;
 		overflow: hidden;
 		img {
@@ -6,6 +7,11 @@
 			height:auto;
 		}
 	}
+	&--map {
+		max-height: 435px;
+		overflow: hidden;
+	}
+}
 
 section {
 	padding: $spaceM;
@@ -41,7 +47,12 @@ section {
 .tg td{padding:10px 5px;border-style:solid;border-width:0;overflow:hidden;word-break:normal;}
 .tg th{font-weight:normal;padding:10px 5px;border-style:solid;border-width:0;overflow:hidden;word-break:normal;}
 .item__price {font-weight: 800; text-align: right;}
-.item__heading{font-weight: 800;}
+.item__heading{
+	font-weight: 800;
+	span {
+		font-size:85%;
+	}
+}
 .item__name {
 	span {
 		font-size:85%;
