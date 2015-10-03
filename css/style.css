@@ -324,12 +324,14 @@ section .details {
   width: 100%;
   float: left; }
   .tiles__item img {
-    max-width: 100%;
+    width: 100%;
     display: block;
     height: auto; }
   .tiles__item.images-combined img:first-child {
     margin-bottom: 1em; }
   @media (min-width: 569px) {
+    .tiles__item--full {
+      width: 100%; }
     .tiles__item--half {
       width: 50%; }
     .tiles__item--third {
