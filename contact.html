@@ -77,15 +77,16 @@
                    <form action="http://formspree.io/bohoweybridge@yahoo.co.uk" method="post">
                       <fieldset>
                         <label for="name">Name:</label>
-                        <input type="text" id="name" placeholder="Enter your full name" />
+                        <input type="text" name="name" id="name" placeholder="Enter your full name" />
                         <label for="email">Email:</label>
-                        <input type="email" name="_replyto" id="email" placeholder="Enter your email address" />
+                        <input type="email" name="email" id="email" placeholder="Enter your email address" />
                         <label for="phone">Tel No:</label>
-                        <input type="tel" id="tel" placeholder="Enter your phone number" />
+                        <input type="tel" name="phone" id="tel" placeholder="Enter your phone number" />
                         <label for="message">Message:</label>
-                        <textarea id="message" placeholder="Send us a message"></textarea>
+                        <textarea id="message" name="message" placeholder="Send us a message"></textarea>
                         <input class="primary-btn" type="submit" value="Send message" />
                         <input type="hidden" name="_next" value="//boho-weybridge.co.uk/thanks.html" />
+                        <input type="hidden" name="_subject" value="Boho weybridge" />
                         <input type="text" name="_gotcha" style="display:none" />
                       </fieldset>
                 </form>
