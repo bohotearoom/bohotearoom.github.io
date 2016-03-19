@@ -289,7 +289,7 @@ section .details {
   line-height: 1.8em; }
   @media (min-width: 768px) {
     section .details {
-      padding-top: 130px;
+      padding-top: 66px;
       width: 38%;
       display: inline-block;
       vertical-align: top;
