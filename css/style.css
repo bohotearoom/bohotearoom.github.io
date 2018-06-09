@@ -249,11 +249,15 @@ section {
 
 .item__heading {
   font-weight: 800; }
-  .item__heading span {
-    font-size: 85%; }
-
-.item__name span {
-  font-size: 85%; }
+  .item__heading strong {
+    font-size: 100%; }
+.item__name {
+ f ont-size: 85%;
+}
+.item__name strong {
+  font-weight: 800;
+  font-size: 100%;
+}
 
 #map {
   height: 200px; }
