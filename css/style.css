@@ -252,7 +252,8 @@ section {
   .item__heading strong {
     font-size: 100%; }
 .item__name {
- f ont-size: 85%;
+ font-size: 85%;
+   line-height: 1.25;
 }
 .item__name strong {
   font-weight: 800;
