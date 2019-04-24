@@ -71,6 +71,7 @@
         </div>
         <div class="full-width contact">
             <div id="map" class="hero hero--map">
+		    <img src="map.png" alt="weybridge map">
             </div>
             <section id="contact">
                 <div class="form">
@@ -115,22 +116,9 @@
             
         </div>
         <script>
-            function initMap() {
-                var myLatLng = {lat: 51.368383, lng: -0.446294};
-                var map = new google.maps.Map(document.getElementById('map'), {
-                    zoom: 17,
-                    center: myLatLng
-                });
-                var marker = new google.maps.Marker({
-                    position: myLatLng,
-                    map: map,
-                    title: 'Boho Tea room & coffee shop'
-                });
-            }
 		    var contactform =  document.getElementById('contactform');
 		    contactform.setAttribute('action', '//formspree.io/' + 'bohoweybridge' + '@' + 'yahoo' + '.' + 'co' + '.' + 'uk');
         </script>
-        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmA-gkLQ8OfXZ6456twF0avQ_He7pfLOI&sensor=false&callback=initMap"></script>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script src="main.js"></script>
     </body>
